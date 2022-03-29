@@ -329,7 +329,8 @@ bool isCheckedBtn = false;
     }
   }
 
-  RequestMoneyTousersAPI() async {
+  RequestMoneyTousersAPI() async
+  {
     Utility().onLoading(context, true);
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     body["cashpot_id"] =
